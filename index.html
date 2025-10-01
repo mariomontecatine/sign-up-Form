@@ -16,36 +16,53 @@
     <div class="content">
       <h3>
         This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <em>now</em> to get started.
+        in your life to help you realize your deepest dreams.
       </h3>
-      <h3>You know you want to.</h3>
-      <h3>Let's do this!</h3>
-      <form action="#" method="post">
+      <h3>Sign up <em>now</em> to get started.</h3>
+      <h3>You <em>know</em> you want to.</h3>
+      <form action="index.html" method="post">
+        <legend class="form-title">Let's do this!</legend>
         <fieldset>
-          <legend>Personal information</legend>
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name" />
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name" />
+          <div class="pair-elements">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="pair-elements">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
         </fieldset>
         <fieldset>
-          <legend>Contact information</legend>
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email" />
-          <label for="phone">PHONE NUMBER</label>
-          <input type="number" id="phone" name="phone" />
+          <div class="pair-elements">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="pair-elements">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="number" id="phone" name="phone" required />
+          </div>
         </fieldset>
         <fieldset>
-          <legend>SECURITY</legend>
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password" />
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-          />
+          <div class="pair-elements">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="10"
+            />
+          </div>
+          <div class="pair-elements">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              required
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              minlength="10"
+            />
+          </div>
         </fieldset>
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
