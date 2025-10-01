@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="image">
+      <img src="images/mountain-sirisvisual.jpg" alt="mountain-sirisvisual" />
+      <div class="logo">
+        <img src="images/odin.png" alt="odin-logo" />
+        <h1>ODIN</h1>
+      </div>
+    </div>
+    <div class="content">
+      <h3>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </h3>
+      <h3>You know you want to.</h3>
+      <h3>Let's do this!</h3>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="first-name" />
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name" />
+        </fieldset>
+        <fieldset>
+          <legend>Contact information</legend>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" />
+          <label for="phone">PHONE NUMBER</label>
+          <input type="number" id="phone" name="phone" />
+        </fieldset>
+        <fieldset>
+          <legend>SECURITY</legend>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" />
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+          />
+        </fieldset>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+  </body>
 </html>
