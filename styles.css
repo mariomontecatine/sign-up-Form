@@ -7,7 +7,7 @@
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
   flex-direction: row;
   margin: 0;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(247, 245, 243);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(250, 250, 250);
 }
 
 /* IMAGES */
@@ -34,72 +34,104 @@ body {
 
 .logo-container {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 18vh;
 }
 
 .logo {
-  width: 35%;
+  width: 10vw;
   height: auto;
 }
 
 .logo-container h1 {
   font-family: "Norse Bold", sans-serif;
   font-size: 6rem;
+  color: white;
+
 }
 
 /* CONTENIDO */
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
-    margin: 0;
-    flex: 1;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 0;
+  flex: 1;
+  padding: 0;
+    
 }
 
 h3 {
-   margin-top: 0.1em;
-   padding-left: 1rem;
+  margin-top: 0.1em;
+  padding-left: 1rem;
 }
 
 form {
-    margin-top: 1rem;
-    background-color: white;  
-    width: 100%;
-    margin: 0; 
-    padding: 1rem; 
-    font-family: 'Arial Narrow Bold', sans-serif;
+  margin-top: 1rem;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  font-family: "Arial Narrow Bold", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(153, 157, 161, 0.5);
 }
 
 fieldset {
-    border: none;
-    display: flex;
-    gap: 5rem;
+  border: none;
+  display: flex;
+  gap: 5rem;
 }
 
 .pair-elements {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    letter-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
 }
 
 input {
-    border-radius: 5px;
-    border: 1px solid #E5E7EB;
-    height: auto;
-    padding: 0.3rem;
-    font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  height: auto;
+  padding: 0.3rem;
+  font-size: 1rem;
 }
 
 input:focus {
-    color: red;
+    outline: none;
+ box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border: 1px solid blue;
+}
+
+#password:invalid, #confirm-password:invalid {
+    border: 1px solid red;
+}
+
+button {
+    background-color: #88cad7;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+
+p a {
+    text-decoration: none;
+    color: #88cad7;
 }

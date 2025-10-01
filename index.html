@@ -21,7 +21,6 @@
       <h3>Sign up <em>now</em> to get started.</h3>
       <h3>You <em>know</em> you want to.</h3>
       <form action="index.html" method="post">
-        <legend class="form-title">Let's do this!</legend>
         <fieldset>
           <div class="pair-elements">
             <label for="first-name">FIRST NAME</label>
@@ -51,6 +50,7 @@
               name="password"
               required
               minlength="10"
+              pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
             />
           </div>
           <div class="pair-elements">
@@ -61,6 +61,7 @@
               id="confirm-password"
               name="confirm-password"
               minlength="10"
+              pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
             />
           </div>
         </fieldset>
