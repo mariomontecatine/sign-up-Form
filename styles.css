@@ -3,13 +3,14 @@
   src: url("fonts/Norse-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  height: 100vw;
+  min-height: 100vh;
 }
 
 /* IMAGES */
@@ -18,11 +19,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
   display: flex;
-  width: 70vh;
+  flex: 0 0 45vw;
+  min-height: 100vh;
+  position: relative;
 }
 
 .logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,9 +38,10 @@ body {
 
 .logo {
   width: 35%;
+  height: auto;
 }
 
 .logo-container h1 {
-  font-family: "Norse Bold";
-  font-size: ;
+  font-family: "Norse Bold", sans-serif;
+  font-size: 6rem;
 }
