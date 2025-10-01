@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("fonts/Norse-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 100vw;
+}
+
+/* IMAGES */
+.image {
+  background-image: url(/images/mountain-sirisvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 70vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 35%;
+}
+
+.logo-container h1 {
+  font-family: "Norse Bold";
+  font-size: ;
+}
